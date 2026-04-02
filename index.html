@@ -1,1 +1,975 @@
 index.html
+
+Hey Rebecca!
+
+Here is your complete ChainSignal landing page code. Follow the steps below to get it live on GitHub Pages for FREE.
+
+STEP-BY-STEP INSTRUCTIONS:
+
+1. Go to github.com and create an account (or sign in)
+2. Click the + icon (top right) then "New repository"
+3. Repository name: chainsignal.github.io
+4. Select "Public" and check "Add a README file"
+5. Click "Create repository"
+6. Click "Add file" then "Create new file"
+7. Type the filename: index.html
+8. Paste ALL of the code below into the big text box
+9. Click "Commit changes"
+10. Wait 60 seconds then visit: chainsignal.github.io
+
+YOUR WEBSITE IS LIVE!
+
+=========================================
+COPY EVERYTHING BELOW THIS LINE
+=========================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainSignal — Real-Time Bitcoin Cycle Intelligence</title>
+    <meta name="description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading. Signal through the noise. Built by Rebecca Castillo.">
+    <meta property="og:title" content="ChainSignal — Signal Through the Noise">
+    <meta property="og:description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading with a transparent 4.3% fee.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chainsignal.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ChainSignal — Signal Through the Noise">
+    <meta name="twitter:description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lavender: #C4B5FD;
+            --indigo: #4F46E5;
+            --indigo-dark: #3730A3;
+            --orange: #FF6B35;
+            --orange-hover: #E85A25;
+            --black: #0A0A0A;
+            --dark-bg: #0F0B1A;
+            --card-bg: #1A1530;
+            --card-border: #2D2545;
+            --white: #FFFFFF;
+            --gray-light: #A5A0B8;
+            --gray-muted: #6B6580;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at 30% 20%, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(196, 181, 253, 0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 50%, rgba(255, 107, 53, 0.05) 0%, transparent 50%);
+            z-index: -1;
+            animation: slowRotate 30s linear infinite;
+        }
+
+        @keyframes slowRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(15, 11, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(196, 181, 253, 0.1);
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--indigo), var(--lavender));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .nav-cta {
+            background: var(--orange);
+            color: var(--white);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--orange-hover);
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.2rem;
+            background: rgba(79, 70, 229, 0.2);
+            border: 1px solid rgba(196, 181, 253, 0.3);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--lavender);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .hero-badge .pulse {
+            width: 8px;
+            height: 8px;
+            background: #22C55E;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--lavender), var(--indigo), var(--orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+            color: var(--gray-light);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--orange), #FF8B5E);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid rgba(196, 181, 253, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--lavender);
+            background: rgba(196, 181, 253, 0.1);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(196, 181, 253, 0.1);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--lavender);
+        }
+
+        .hero-stat .label {
+            font-size: 0.85rem;
+            color: var(--gray-muted);
+            margin-top: 0.25rem;
+        }
+
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--gray-light);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .about {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--lavender);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(79, 70, 229, 0.15);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.3), rgba(196, 181, 253, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            color: var(--gray-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--indigo), var(--lavender));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.2rem;
+        }
+
+        .step h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            color: var(--gray-light);
+            font-size: 0.9rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--indigo);
+            position: relative;
+            background: linear-gradient(180deg, rgba(79, 70, 229, 0.15), var(--card-bg));
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--indigo), var(--lavender));
+            color: var(--white);
+            padding: 0.3rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--gray-muted);
+        }
+
+        .pricing-card .price-annual {
+            font-size: 0.85rem;
+            color: var(--gray-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--gray-light);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: #22C55E;
+            font-weight: 700;
+        }
+
+        .pricing-card .btn-primary,
+        .pricing-card .btn-secondary {
+            width: 100%;
+            justify-content: center;
+            margin-top: 1rem;
+            display: flex;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 6rem 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .waitlist-form {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .waitlist-form input {
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 2px solid var(--card-border);
+            background: var(--card-bg);
+            color: var(--white);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            flex: 1;
+            min-width: 250px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .waitlist-form input:focus {
+            border-color: var(--indigo);
+        }
+
+        .waitlist-form input::placeholder {
+            color: var(--gray-muted);
+        }
+
+        .waitlist-form button {
+            padding: 1rem 2rem;
+            white-space: nowrap;
+        }
+
+        .form-note {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--gray-muted);
+        }
+
+        .partners {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partners-label {
+            font-size: 0.85rem;
+            color: var(--gray-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            opacity: 0.6;
+        }
+
+        .partners-logos span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--gray-light);
+        }
+
+        footer {
+            border-top: 1px solid var(--card-border);
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand p {
+            color: var(--gray-muted);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            max-width: 300px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links div h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--white);
+        }
+
+        .footer-links div a {
+            display: block;
+            color: var(--gray-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 0.25rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links div a:hover {
+            color: var(--lavender);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(196, 181, 253, 0.1);
+            text-align: center;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.75rem;
+            color: var(--gray-muted);
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.8rem;
+            color: var(--gray-muted);
+        }
+
+        .bitcoin-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(247, 147, 26, 0.1);
+            border: 1px solid rgba(247, 147, 26, 0.3);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #F7931A;
+            margin-top: 1.5rem;
+        }
+
+        .security-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #22C55E;
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 1rem 1.25rem; }
+            .logo { font-size: 1.2rem; }
+            .hero { padding: 7rem 1.5rem 3rem; }
+            section { padding: 4rem 1.5rem; }
+            .hero-stats { gap: 2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
+            .waitlist-form { flex-direction: column; }
+            .waitlist-form input { min-width: unset; }
+            .footer-top { flex-direction: column; }
+            .hero-buttons { flex-direction: column; width: 100%; padding: 0 1rem; }
+            .btn-primary, .btn-secondary { width: 100%; justify-content: center; text-align: center; }
+        }
+
+        html { scroll-behavior: smooth; }
+        :focus-visible { outline: 2px solid var(--lavender); outline-offset: 2px; }
+        ::selection { background: var(--indigo); color: var(--white); }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav>
+        <a href="#" class="logo">
+            <div class="logo-icon">&#9672;</div>
+            ChainSignal
+        </a>
+        <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-badge">
+            <div class="pulse"></div>
+            Now Live — Phase 1 Launch
+        </div>
+        <h1>
+            <span class="gradient-text">Signal Through</span><br>
+            the Noise.
+        </h1>
+        <p>Real-time Bitcoin cycle intelligence, ROI analytics, and transparent BTC trading. Built for clarity. Powered by data. Bitcoin only.</p>
+        <div class="hero-buttons">
+            <a href="#waitlist" class="btn-primary">Get Early Access &rarr;</a>
+            <a href="#features" class="btn-secondary">See Features</a>
+        </div>
+        <div class="bitcoin-badge">&#x20BF; Bitcoin Only — No Altcoins</div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="number">4.3%</div>
+                <div class="label">Transparent Fee</div>
+            </div>
+            <div class="hero-stat">
+                <div class="number">24/7</div>
+                <div class="label">AI Support</div>
+            </div>
+            <div class="hero-stat">
+                <div class="number">AES-256</div>
+                <div class="label">Military-Grade Encryption</div>
+            </div>
+            <div class="hero-stat">
+                <div class="number">3</div>
+                <div class="label">Platforms (Web, iOS, Android)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="section-label">About</div>
+        <h2 class="section-title">What is ChainSignal?</h2>
+        <p class="section-subtitle">
+            ChainSignal is a Bitcoin-only intelligence platform that cuts through the noise of the crypto market.
+            We deliver real-time cycle positioning, precision ROI analytics, and transparent Bitcoin trading —
+            all in one accessible, security-first platform.
+        </p>
+        <p class="section-subtitle" style="margin-top: 1rem;">
+            Founded by Rebecca Castillo. Built accessibility-first. Powered by ethical technology.
+        </p>
+    </section>
+
+    <section id="features">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Intelligence. Not Noise.</h2>
+        <p class="section-subtitle">Every feature is designed to give you clarity, confidence, and control.</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128200;</div>
+                <h3>Real-Time Cycle Intelligence</h3>
+                <p>Know exactly where Bitcoin is in the market cycle — in real time. Our AI-powered models analyze on-chain data, historical patterns, and market indicators to give you a clear cycle position.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128202;</div>
+                <h3>ROI Analytics Dashboard</h3>
+                <p>Track your actual returns with precision. See your portfolio performance, entry vs. current prices, realized vs. unrealized gains, and projection models — all in one clean dashboard.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128176;</div>
+                <h3>Bitcoin Trading (4.3% Fee)</h3>
+                <p>Sell Bitcoin directly on ChainSignal with a transparent, flat 4.3% transaction fee. No hidden costs. No surprise charges. What you see is what you pay. Coming in Phase 2.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#129302;</div>
+                <h3>AI-Powered Customer Support</h3>
+                <p>Get help anytime with our intelligent AI assistant. Account questions, trading support, cycle intelligence explanations, platform navigation — available 24 hours a day, 7 days a week.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128274;</div>
+                <h3>Maximum-Grade Security</h3>
+                <p>AES-256-GCM encryption (military-grade), TLS 1.3, post-quantum cryptography (NIST FIPS 203/204/205), hardware security modules, and multi-signature wallet architecture. Your data and Bitcoin are untouchable.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128241;</div>
+                <h3>Cross-Platform Access</h3>
+                <p>Access ChainSignal on any device — Web, Android, and iOS. Your data syncs seamlessly. Your signal follows you everywhere. Built accessibility-first for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div style="text-align: center;">
+            <div class="section-label">How It Works</div>
+            <h2 class="section-title">Three Steps to Signal</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Get started in minutes. No complexity. No noise.</p>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Create Your Account</h3>
+                <p>Sign up in under 2 minutes. Free tier available — no credit card required. Your data is encrypted from the moment you join.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Connect Your Intelligence</h3>
+                <p>Set up your dashboard, customize your analytics views, and configure your cycle alerts. ChainSignal adapts to how you invest.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Trade with Clarity</h3>
+                <p>When you're ready, sell Bitcoin directly on the platform with a transparent 4.3% fee. No hidden costs. No surprises. Just signal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div style="text-align: center;">
+            <div class="section-label">Pricing</div>
+            <h2 class="section-title">Plans That Scale With You</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Start free. Upgrade when you're ready. No pressure.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Signal Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <div class="price-annual">Free forever</div>
+                <ul class="pricing-features">
+                    <li>Basic cycle position indicator</li>
+                    <li>Limited ROI tracking</li>
+                    <li>Community access</li>
+                    <li>AI support (standard)</li>
+                    <li>Web access</li>
+                </ul>
+                <a href="#waitlist" class="btn-secondary">Get Started Free</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Signal Pro</h3>
+                <div class="price">$14.99<span>/mo</span></div>
+                <div class="price-annual">or $149/year (save 17%)</div>
+                <ul class="pricing-features">
+                    <li>Full real-time cycle intelligence</li>
+                    <li>Advanced ROI analytics</li>
+                    <li>Custom alerts and notifications</li>
+                    <li>Priority AI support</li>
+                    <li>All platforms (Web, iOS, Android)</li>
+                    <li>Historical cycle data access</li>
+                </ul>
+                <a href="#waitlist" class="btn-primary">Join Waitlist</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Signal Elite</h3>
+                <div class="price">$49.99<span>/mo</span></div>
+                <div class="price-annual">or $499/year (save 17%)</div>
+                <ul class="pricing-features">
+                    <li>Everything in Pro</li>
+                    <li>Institutional-grade analytics</li>
+                    <li>API access</li>
+                    <li>Dedicated AI assistant</li>
+                    <li>Early access to new features</li>
+                    <li>Direct support escalation</li>
+                    <li>Custom reports and exports</li>
+                </ul>
+                <a href="#waitlist" class="btn-secondary">Join Waitlist</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <div class="section-label">Security</div>
+        <h2 class="section-title">Military-Grade. Quantum-Ready.</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">ChainSignal exceeds banking security standards and is future-proofed against quantum computing threats.</p>
+        <div class="security-badges">
+            <div class="security-badge">&#128274; AES-256-GCM Encryption</div>
+            <div class="security-badge">&#128274; TLS 1.3 Exclusive</div>
+            <div class="security-badge">&#128274; Post-Quantum Ready (NIST FIPS 203)</div>
+            <div class="security-badge">&#128274; FIPS 140-3 Level 3 HSMs</div>
+            <div class="security-badge">&#128274; Multi-Signature Wallets</div>
+            <div class="security-badge">&#128274; SOC 2 Type II Target</div>
+        </div>
+    </section>
+
+    <div class="partners">
+        <div class="partners-label">Ethical Technology Partners</div>
+        <div class="partners-logos">
+            <span>OpenAI</span>
+            <span>Alphabet</span>
+            <span>GitHub</span>
+        </div>
+    </div>
+
+    <section class="cta-section" id="waitlist">
+        <div class="section-label">Early Access</div>
+        <h2 class="section-title">Ready for Signal?</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+            Join the waitlist for early access to ChainSignal. Be the first to experience Bitcoin intelligence done right.
+        </p>
+        <form class="waitlist-form" action="https://formspree.io/f/placeholder" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn-primary">Join the Waitlist &rarr;</button>
+        </form>
+        <p class="form-note">No spam. No noise. Just signal. Unsubscribe anytime.</p>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-icon">&#9672;</div>
+                    ChainSignal
+                </a>
+                <p>Signal through the noise. Real-time Bitcoin cycle intelligence, ROI analytics, and transparent BTC trading.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#waitlist">Early Access</a>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Risk Disclosure</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-disclaimer">
+                ChainSignal is not a financial advisor and does not provide financial advice. All information provided is for informational and educational purposes only. Cryptocurrency investments carry significant risk, including the potential loss of your entire investment. Past performance does not guarantee future results. Users are solely responsible for their own investment decisions. ChainSignal charges a 4.3% transaction fee on Bitcoin sells. ChainSignal is administered solely by Rebecca Castillo.
+            </p>
+            <p class="footer-copyright">2026 ChainSignal LLC. All rights reserved. Built with love in California.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+=========================================
+STOP COPYING HERE
+=========================================
+
+WHAT YOUR WEBSITE INCLUDES:
+- Animated gradient background (lavender, indigo, electric orange)
+- Fixed navigation with "Join Waitlist" button
+- Hero section: "Signal Through the Noise"
+- "Now Live - Phase 1 Launch" badge with green pulse
+- Bitcoin Only badge
+- Stats bar: 4.3% fee, 24/7 AI support, AES-256 encryption, 3 platforms
+- About section
+- 6 feature cards (Cycle Intelligence, ROI Dashboard, Trading, AI Support, Security, Cross-Platform)
+- How It Works (3 steps)
+- Pricing (Signal Free $0, Signal Pro $14.99/mo, Signal Elite $49.99/mo)
+- Security badges (military-grade, quantum-ready)
+- Ethical partners (OpenAI, Alphabet, GitHub)
+- Email waitlist signup form
+- Full footer with legal disclaimer
+- Mobile responsive (works on phones)
+- Accessibility-first design
+
+NOTE: The waitlist form uses a placeholder. To make it actually collect emails, sign up for a free Formspree.io account and replace "placeholder" in the form action URL with your Formspree form ID.
+
+Signal through the noise.
+ChainSignal LLC - Founded by Rebecca Castillo 
+Show quoted text
+
