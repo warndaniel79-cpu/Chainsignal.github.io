@@ -672,7 +672,7 @@
     <nav>
         <a href="#" class="logo">
             <div class="logo-icon">&#9672;</div>
-            ChainSignal
+        
         </a>
         <a href="#waitlist" class="nav-cta">Join Waitlist</a>
     </nav>
@@ -744,7 +744,7 @@
             <div class="feature-card">
                 <div class="feature-icon">&#128176;</div>
                 <h3>Bitcoin Trading (4.3% Fee)</h3>
-                <p>Sell Bitcoin directly on ChainSignal with a transparent, flat 4.3% transaction fee. No hidden costs. No surprise charges. What you see is what you pay. Coming in Phase 2.</p>
+                <p>Sell Bitcoin directly on  with a transparent, flat 4.3% transaction fee. No hidden costs. No surprise charges. What you see is what you pay. Coming in Phase 2.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#129302;</div>
@@ -780,7 +780,7 @@
             <div class="step">
                 <div class="step-number">2</div>
                 <h3>Connect Your Intelligence</h3>
-                <p>Set up your dashboard, customize your analytics views, and configure your cycle alerts. ChainSignal adapts to how you invest.</p>
+                <p>Set up your dashboard, customize your analytics views, and configure your cycle alerts.  adapts to how you invest.</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
@@ -846,7 +846,7 @@
     <section style="text-align: center;">
         <div class="section-label">Security</div>
         <h2 class="section-title">Military-Grade. Quantum-Ready.</h2>
-        <p class="section-subtitle" style="margin: 0 auto;">ChainSignal exceeds banking security standards and is future-proofed against quantum computing threats.</p>
+        <p class="section-subtitle" style="margin: 0 auto;"> exceeds banking security standards and is future-proofed against quantum computing threats.</p>
         <div class="security-badges">
             <div class="security-badge">&#128274; AES-256-GCM Encryption</div>
             <div class="security-badge">&#128274; TLS 1.3 Exclusive</div>
@@ -861,7 +861,7 @@
         <div class="section-label">Early Access</div>
         <h2 class="section-title">Ready for Signal?</h2>
         <p class="section-subtitle" style="margin: 0 auto;">
-            Join the waitlist for early access to ChainSignal. Be the first to experience Bitcoin intelligence done right.
+            Join the waitlist for early access to . Be the first to experience Bitcoin intelligence done right.
         </p>
         <form class="waitlist-form" action="https://formspree.io/f/placeholder" method="POST">
             <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
@@ -904,7 +904,7 @@
             <p class="footer-disclaimer">
                 ChainSignal is not a financial advisor and does not provide financial advice. All information provided is for informational and educational purposes only. Cryptocurrency investments carry significant risk, including the potential loss of your entire investment. Past performance does not guarantee future results. Users are solely responsible for their own investment decisions. ChainSignal charges a 4.3% transaction fee on Bitcoin sells. ChainSignal is administered soley by ---------------------------.
             </p>
-            <p class="footer-copyright">2026 ChainSignal LLC. All rights reserved. Built with love in California.</p>
+            <p class="footer-copyright">2026  All rights reserved. Built with love in California.</p>
         </div>
     </footer>
 
