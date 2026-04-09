@@ -857,15 +857,6 @@
         </div>
     </section>
 
-    <div class="partners">
-        <div class="partners-label">Ethical Technology Partners</div>
-        <div class="partners-logos">
-            <span>OpenAI</span>
-            <span>Alphabet</span>
-            <span>GitHub</span>
-        </div>
-    </div>
-
     <section class="cta-section" id="waitlist">
         <div class="section-label">Early Access</div>
         <h2 class="section-title">Ready for Signal?</h2>
