@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>— Real-Time Bitcoin Cycle Intelligence</title>
     <meta name="description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading. Signal through the noise. Built by --------------">
-    <meta property="og:title" content="ChainSignal — Signal Through the Noise">
+    <meta property="og:title" content=" — Signal Through the Noise">
     <meta property="og:description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading with a transparent 4.3% fee.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chainsignal.github.io">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ChainSignal — Signal Through the Noise">
+    <meta name="twitter:title" content=— Signal Through the Noise">
     <meta name="twitter:description" content="Real-time Bitcoin cycle intelligence, ROI analytics, and BTC trading.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -714,9 +714,9 @@
 
     <section class="about">
         <div class="section-label">About</div>
-        <h2 class="section-title">What is ChainSignal?</h2>
+        <h2 class="section-title">What is ?</h2>
         <p class="section-subtitle">
-            ChainSignal is a Bitcoin-only intelligence platform that cuts through the noise of the crypto market.
+             is a Bitcoin-only intelligence platform that cuts through the noise of the crypto market.
             We deliver real-time cycle positioning, precision ROI analytics, and transparent Bitcoin trading —
             all in one accessible, security-first platform.
         </p>
@@ -759,7 +759,7 @@
             <div class="feature-card">
                 <div class="feature-icon">&#128241;</div>
                 <h3>Cross-Platform Access</h3>
-                <p>Access ChainSignal on any device — Web, Android, and iOS. Your data syncs seamlessly. Your signal follows you everywhere. Built accessibility-first for everyone.</p>
+                <p>Access on any device — Web, Android, and iOS. Your data syncs seamlessly. Your signal follows you everywhere. Built accessibility-first for everyone.</p>
             </div>
         </div>
     </section>
@@ -875,7 +875,7 @@
             <div class="footer-brand">
                 <a href="#" class="logo">
                     <div class="logo-icon">&#9672;</div>
-                    ChainSignal
+                    
                 </a>
                 <p>Signal through the noise. Real-time Bitcoin cycle intelligence, ROI analytics, and transparent BTC trading.</p>
             </div>
@@ -902,7 +902,7 @@
         </div>
         <div class="footer-bottom">
             <p class="footer-disclaimer">
-                ChainSignal is not a financial advisor and does not provide financial advice. All information provided is for informational and educational purposes only. Cryptocurrency investments carry significant risk, including the potential loss of your entire investment. Past performance does not guarantee future results. Users are solely responsible for their own investment decisions. ChainSignal charges a 4.3% transaction fee on Bitcoin sells. ChainSignal is administered soley by ---------------------------.
+                 is not a financial advisor and does not provide financial advice. All information provided is for informational and educational purposes only. Cryptocurrency investments carry significant risk, including the potential loss of your entire investment. Past performance does not guarantee future results. Users are solely responsible for their own investment decisions.charges a 4.3% transaction fee on Bitcoin sells. is administered soley by ---------------------------.
             </p>
             <p class="footer-copyright">2026  All rights reserved. Built with love in California.</p>
         </div>
